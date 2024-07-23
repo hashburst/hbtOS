@@ -3,45 +3,40 @@ Custom Linux for Hashburst Blockchain and Crypto-Mining Cloud Computing System
 
 # Hashburst Cloud OS
 
-1. Preparazione dell'Ambiente
+## 1. Preparazione dell'Ambiente
 Scarica e Installa Linux Lite 7.0:
 Scarica l'immagine ISO da https://mirror.koddos.net/linuxlite/isos/7.0/
 Usa un tool come Rufus o Etcher per creare l'unità USB avviabile.
 Installa Linux Lite 7.0 sulla tua macchina. Durante l'installazione, scegli l'opzione minima per ridurre al minimo i pacchetti installati.
 
-Rimozione di X11:
-Rimuovi l'interfaccia grafica X11 se installata:
+  Rimozione di X11:
+  Rimuovi l'interfaccia grafica X11 se installata:
+  
+  sh
 
+                          sudo apt remove --purge xorg lightdm lightdm-gtk-greeter
+                          sudo apt autoremove --purge
 
-sh
-
-sudo apt remove --purge xorg lightdm lightdm-gtk-greeter
-sudo apt autoremove --purge
-
-2. Installazione degli Strumenti Necessari
+## 2. Installazione degli Strumenti Necessari
 
 Aggiornamento del Sistema:
 
-
 sh
 
-sudo apt update
-sudo apt upgrade -y
+                          sudo apt update
+                          sudo apt upgrade -y
 
 Installazione di Git, Curl, Wget, Node.js e npm:
 
-sudo apt install git curl wget nodejs npm -y
+                          sudo apt install git curl wget nodejs npm -y
+
 Verifica dell’installazione di node e npm:
 
-sh
+                          node -v 
+                          
+                          npm -v
 
-
-
-node -v 
-
-npm -v
-
-3. Installazione dei Driver Nvidia
+## 3. Installazione dei Driver Nvidia
 
 Aggiunta del Repository dei Driver Nvidia:
 
