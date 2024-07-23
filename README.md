@@ -1,7 +1,7 @@
 # hbtOS
 Custom Linux for Hashburst Blockchain and Crypto-Mining Cloud Computing System
 
-Hashburst Cloud OS
+# Hashburst Cloud OS
 
 1. Preparazione dell'Ambiente
 Scarica e Installa Linux Lite 7.0:
